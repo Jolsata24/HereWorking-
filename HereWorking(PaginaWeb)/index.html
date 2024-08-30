@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HereWorking</title>
+    <link rel="shortcut icon" href="imagenesHW/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
+</head>
+<body>
+    <!--LOADER-->
+    <div class="container--loader">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <a href="index.html"><img src="imagenesHW/logo.png" alt="" class="logo" width="55px"></a>
+        <label class="fa-solid fa-bars" id="menu" for="check"></label>
+        <input type="checkbox" name="" id="check">
+        <nav>
+            <ul>
+                <li><a href="#" class="volver-arriba">INICIO</a></li>
+                <li><a href="#nosotros" class="scroll-suave">NOSOTROS</a></li>
+                <li><a href="aside" class="scroll-suave">¡HOLA MUNDO!</a></li>
+                <li><a href="article" class="scroll-suave">LEARN</a></li>
+                <li><a href="section"class="scroll-suave">CONTACTANOS</a></li>
+            </ul>
+        </nav>
+        <div class="redes">
+            <a href="https://www.facebook.com/Jolsata24/">
+                <img src="imagenesHW/fb.png" width="20px">
+            </a>
+    
+            <a href="https://www.linkedin.com/company/hereworking">
+                <img src="imagenesHW/lin.png" width="20px">
+            </a>
+    
+            <a href="https://www.instagram.com/infworking/">
+                <img src="imagenesHW/ins.png" width="21px">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="cont-banner">
+                <h2>HEREWORKING</h2>
+                <p align="center">Aprende mas de la <span class="auto-type"></span></p>
+                    <div align="center">
+                        <img src="imagenesHW/logo.png" alt="">
+                    </div>
+            </div>
+        </div>
+        
+        
+
+        <div align="center">
+            <img src="img/icono.png" alt="">
+        </div>
+        
+    </main>
+
+    <div class="Nosotros">
+        <h1>Nosotros</h1>
+        <ul class="nosotro">
+            <li class="ntrs">
+                <img src="imagenesHW/logo (1).png" alt="Nuestro logo">
+            </li>
+            <li class="ntrs">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi in similique nam natus tenetur ad. Possimus sunt debitis eaque quos ab. Dolore eum illo vel porro molestiae quod unde voluptates?</p>
+            </li>
+        </ul>
+    </div>
+
+    <aside>
+        <div class="back">
+            <div class="hmt">
+                <h2>HELLO WORLD</h2>  
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente nulla dolorem porro nam, voluptas eaque nostrum laboriosam amet quis est voluptate dolores tempore. Ab natus cumque, maiores deleniti et earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium porro alias dolore voluptates tempore, accusantium asperiores fugiat vel perferendis! Saepe possimus, quis pariatur impedit sed rem et. Ut, veritatis doloribus.lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo maiores possimus id suscipit odio sapiente rem enim non alias iste sed cupiditate vero, minus qui iusto neque eum molestias officiis?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente nulla dolorem porro nam, voluptas eaque nostrum laboriosam amet quis est voluptate dolores tempore. Ab natus cumque, maiores deleniti et earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium porro alias dolore voluptates tempore, accusantium asperiores fugiat vel perferendis! Saepe possimus, quis pariatur impedit sed rem et. Ut, veritatis doloribus.lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo maiores possimus id suscipit odio sapiente rem enim non alias iste sed cupiditate vero, minus qui iusto neque eum molestias officiis?</p>
+            </div>
+            <div>
+                <img src="imagenesHW/an.jpg" alt="" class="hmi">
+            </div>
+        </div>
+    </aside>
+
+
+
+
+
+
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("abajo", window.scrollY>50);
+    })
+</script>   
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".auto-type", {
+        strings: ["programación","informatica", "desarrollo web","y mas :)"],
+        typeSpeed:150,
+        backSpeed:150,
+        loop:true
+    })
+</script>
+<script src="javascript.js"></script>
+
+</body>
+</html>

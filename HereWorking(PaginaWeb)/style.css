@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#121213;
+    font-size: 15px;
+    font-family: Arial;
+}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(77, 203, 241);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(38, 38, 38);  /* creates padding around scroll thumb */
+  }
+/*AQUI EMPIEZA LA CABEZA DE LA PAGINA WEB*/
+
+header {
+    width: 100px;
+    height: 100px;
+    animation-name: example;
+    animation-duration: 4s;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    padding: 0 2.25rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 5.875rem;
+    transition: 0.8s ease-out;
+}
+
+header.abajo{
+    background: #121213ee;
+    transition: 0.8s ease-out;
+    
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav li{
+    display: inline-block;
+}
+header nav a{
+    text-decoration: none;
+    color:whitesmoke;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    transition: 0.5s ease-out;
+}
+a:hover {
+    transition: 0.5s ease-out;
+    color: rgb(77, 203, 241);
+}
+span{
+    color:rgb(77, 203, 241) ;
+}
+
+header  .logo {
+    max-width: 3.525rem
+}
+header  a {
+    padding: 0 0.5625rem
+    
+}
+header .redes a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#menu{
+    color: white;
+    display: none;
+    float: right;
+}
+#check{
+    display: none;
+}
+#check:checked ~ nav{
+    transition: 0.5s ease-out;
+    right: 700px;
+}
+
+/*AQUI TERMINA LA CABEZA DE LA PAGINA WEB*/
+
+/*AQUI EMPIEZA EL INICIO DE LA PAGINA WEB*/
+.banner{
+    position: relative;
+    background: url(imagenesHW/redes4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+}
+.cont-banner{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+.cont-banner h2{
+    font-family: calibri;
+    color: rgb(77, 203, 241);
+    text-shadow: 0.07em 0.07em 0 rgb(0 0 0 / 20%);
+    font-size: 150px;
+    text-align: center;
+
+}
+.cont-banner p{
+    font-size: 40px;
+    font-family: calibri;
+    color: white;
+    text-shadow: 2px 1px 1px black;
+}
+.cont-banner u{
+    color: rgb(77, 203, 241);
+}
+.cont-banner img{
+    width: 200px;
+    margin-top: 25px;
+    box-shadow: 0 0 50px rgb(77, 203, 241);
+    border-radius: 5px;
+    max-width: 60%;
+    animation: movimiento 2.5s linear infinite;
+}
+
+
+
+/*AQUI TERMINA EL INICIO DE LA PAGINA WEB*/
+
+/*AQUI EMPIEZA EL "NOSOTROS"*/
+.Nosotros{
+    max-width: 60%;
+    margin: auto;
+}
+.Nosotros h1{
+    padding: 20px;
+    text-align: center;
+    font-family: calibri;
+    color:rgb(77, 203, 241);
+    font-size: 50px;
+}
+.Nosotros img{
+    max-width: 600px;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(41, 141, 175);
+}
+.Nosotros p, .Nosotros li{
+    color: white;
+    font-family: calibri;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    justify-content: center;
+    text-align: justify;
+    margin: auto;
+    padding: 10px;
+}
+
+.nosotro{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            150px,
+            1fr
+        )
+    );
+}
+
+
+
+/*NOLA MUNDO*/
+aside{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 100px;
+}
+.back{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.hmt{
+    width: 50%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.hmt h2{
+    text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.74);
+    font-family: calibri;
+    color:rgb(77, 203, 241);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hmt p{
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+    font-family: calibri;
+}
+.hmi{
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 550px;
+    margin-top: 50px;
+    box-shadow: 0 0 70px rgb(56, 56, 56);
+    border-radius: 2%;
+}
+
+
+
+/*NO TOCAR !!!!!!!!!*/
+/*NO TOCAR !!!!!!!!!*/
+/*NO TOCAR !!!!!!!!!*/
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
